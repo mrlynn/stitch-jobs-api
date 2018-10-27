@@ -1,0 +1,11 @@
+{
+    "id": "5bd3d3030c4db17da2ebce57",
+    "name": "lever",
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "GET",
+        "validationMethod": "NO_VALIDATION"
+    },
+    "respond_result": true
+}

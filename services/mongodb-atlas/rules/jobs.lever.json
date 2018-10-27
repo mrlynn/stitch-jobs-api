@@ -1,0 +1,35 @@
+{
+    "id": "5bd3b6b0e707c0bbb6daad80",
+    "database": "jobs",
+    "collection": "lever",
+    "filters": [
+        {
+            "name": "filter 1",
+            "query": {},
+            "apply_when": {}
+        }
+    ],
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "owner_id": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "owner_id": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
