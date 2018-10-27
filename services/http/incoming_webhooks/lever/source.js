@@ -2,5 +2,6 @@ exports = function(payload) {
   const mongodb = context.services.get("mongodb-atlas");
   const lever = mongodb.db("jobs").collection("lever");
   var queryTitle = payload.query.title || '';
-  return lever.find({text: BSON.BSONRegExp(queryTitle, "i")}).toArray();
+  var queryLocation = payload.query.location || '';
+  return {"jobs": lever.find({$and: [{text: BSON.BSONRegExp(queryTitle, "i")}, {"categories.location": BSON.BSONRegExp(queryLocation, "i")}]}).toArray()};
 };
