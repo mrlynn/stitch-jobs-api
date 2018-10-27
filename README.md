@@ -2,7 +2,7 @@
 
 A jobs searching api created using MongoDB Stitch. 
 
-[![Powered by Stitch](http://badge.learnstitch.com/?appid=internjobs-gurbl)(http://cloud.mongodb.com)]
+[![Powered by Stitch](http://badge.learnstitch.com/?appid=internjobs-gurbl)](http://cloud.mongodb.com)
 
 # API
 
